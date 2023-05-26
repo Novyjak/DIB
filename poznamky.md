@@ -169,14 +169,65 @@ Replikace dat přináší několik výhod:
 5. Jakou technologii je vhodné využít pro zajištění více četných archivů a proč?
 
 ## 1. Co je archivace dat?
+- Archivace dat se odlišuje od běžného ukládání a správy dat. Jedná se o proces uchovávání dat dlouhodobě, obvykle pro účely budoucí reference, historického uchování, právních nebo regulačních požadavků a dalších důvodů. Archivace dat zajišťuje, že data zůstanou dostupná, chráněná a integrovaná po celou dobu svého životního cyklu.
+
+Archivace dat obvykle zahrnuje následující prvky:
+
+- Identifikace dat: Identifikují se a vybírají se důležitá data, která mají být archivována. Tato data mohou zahrnovat dokumenty, záznamy, soubory, elektronickou poštu, databáze a další.
+
+- Klasifikace a řízení: Data jsou klasifikována na základě jejich významu, hodnoty, zachování a právních požadavků. Stanovují se pravidla a politiky pro řízení a uchovávání archivovaných dat.
+
+- Zabezpečení: Archivovaná data musí být chráněna před ztrátou, poškozením nebo neoprávněným přístupem. To zahrnuje opatření jako zálohování, šifrování, kontrola integrity dat a zajištění přístupových práv.
+
+- Dlouhodobé uchovávání: Archivovaná data jsou uchovávána po dlouhou dobu, která může být měřena v letech nebo desetiletích. Je důležité zvolit vhodné médium pro uchovávání dat, které je odolné vůči degradaci a zajišťuje jejich dlouhodobou dostupnost.
+
+- Indexace a vyhledávání: Pro usnadnění vyhledávání a přístupu k archivovaným datům se používají indexační mechanismy a metadatové informace. To umožňuje rychlé a efektivní vyhledávání požadovaných dat.
+
+- Kontrola integrity a migrace: Pravidelně se provádí kontrola integrity archivovaných dat a provádí se migrace na nová média nebo formáty, aby byla zajištěna dlouhodobá čitelnost a dostupnost dat.
 
 ## 2. Jak mají být data archivována v závislosti na jejich citlivost?
+Způsob, jakým jsou data archivována, závisí na jejich citlivosti a požadavcích na ochranu soukromí a bezpečnost. Zde jsou některé přístupy k archivaci dat v závislosti na jejich citlivosti:
 
-## 3. Jak se liší archivace osobních a firemních dat?
+- Veřejně dostupná data: Pokud se jedná o veřejně dostupná data, která neobsahují žádné citlivé informace, mohou být archivována v otevřených formátech, jako jsou veřejné webové archivy, open data platformy nebo veřejné knihovny. Přístup k nim by měl být snadný a bez omezení.
 
-## 4. Co jsou komprimační algoritmy a kdy se využívají?
+- Citlivá korporátní data: Pro citlivá korporátní data, jako jsou firemní dokumenty, finanční záznamy nebo obchodní tajemství, je obvykle vyžadováno vyšší zabezpečení. Tato data by měla být archivována v systému s přísným řízením přístupu, šifrováním a mechanismy pro sledování a auditování přístupu.
 
-## 5. Jakou technologii je vhodné využít pro zajištění více četných archivů a proč?
+- Osobní a citlivá data: Pokud jde o osobní data, jako jsou zdravotní záznamy, identifikační údaje nebo finanční informace, platí přísná pravidla ochrany soukromí. Tato data by měla být archivována s důrazem na dodržování předpisů ochrany osobních údajů, jako je například GDPR (Obecné nařízení o ochraně osobních údajů). To zahrnuje šifrování dat, anonymizaci, omezený přístup a možnost odstranění dat na požádání.
+
+- Regulovaná data: Pro data, která podléhají přísným regulačním požadavkům, jako jsou účetní záznamy, lékařské záznamy nebo právní dokumenty, je zapotřebí splnit specifické normy archivace. To může zahrnovat dlouhodobé uchovávání, auditovatelnost, verzování a záznamy o změnách.
+
+## 3. Co jsou komprimační algoritmy a kdy se využívají?
+Komprimační algoritmy jsou algoritmy používané ke snižování velikosti datových souborů nebo datových proudů. Cílem je redukovat množství potřebného úložného prostoru nebo snížit přenosovou rychlost dat. Komprese dat se využívá v mnoha oblastech, včetně komprese souborů, komunikace dat, archivace a zálohování.
+
+Existují dva základní typy komprese:
+
+- Ztrátová komprese (Lossy): Ztrátová komprese je technika, při které dochází k trvalé ztrátě části informace při kompresi dat. Tento typ komprese se často používá pro média, jako jsou zvukové nebo obrazové soubory, kde drobné ztráty nejsou významné. Příklady ztrátových kompresních algoritmů zahrnují JPEG pro obrazová data nebo MP3 pro zvuková data.
+
+Bezztrátová komprese (Lossless): Bezztrátová komprese je technika, která umožňuje obnovení původních dat bez jakékoliv ztráty informace. Tento typ komprese je vhodný pro soubory, které vyžadují přesnou reprodukci původních dat, jako jsou textové soubory nebo programové kódy. Bezztrátové kompresní algoritmy se snaží identifikovat opakující se vzorce nebo redundantní informace v datech a nahradit je kratšími reprezentacemi. Příklady bezztrátových kompresních algoritmů zahrnují ZIP pro soubory, PNG pro obrazová data nebo FLAC pro zvuková data.
+
+Využití komprese dat je rozsáhlé a zahrnuje následující případy:
+
+- Úspora úložného prostoru: Komprese dat umožňuje ušetřit místo na úložišti, což je užitečné zejména při archivaci a zálohování dat.
+
+- Rychlejší přenos dat: Komprese dat snižuje velikost datových souborů, což vede ke snížení času potřebného pro jejich přenos přes síť.
+
+- Optimalizace paměti: V některých případech je komprese dat užitečná pro optimalizaci paměťových nároků, například při ukládání dat v operační paměti nebo při komunikaci mezi zařízeními s omezenou pamětí.
+
+- Zvýšení výkonu: Komprese dat může také přinést výhody výkonu, protože snížení velikosti datových souborů nebo datových proudů může zkrátit čas potřebný pro jejich zpracování.
+
+## 4. Jakou technologii je vhodné využít pro zajištění více četných archivů a proč?
+
+Erasure coding je metoda pro redundanci dat, která umožňuje rozdělit data na menší kousky, zakódovat je a distribuovat mezi různá úložiště nebo servery.
+
+Existuje několik důvodů, proč je erasure coding vhodnou technologií pro více četné archivy:
+
+- Odolnost proti výpadkům: Erasure coding umožňuje rozdělit data na několik fragmentů a zakódovat je tak, že lze obnovit původní data z pouze části fragmentů. To znamená, že i když selže některé úložiště nebo server, data lze stále obnovit. Erasure coding poskytuje vyšší odolnost proti výpadkům než tradiční metody, jako je zrcadlení dat (RAID 1), které vyžadují redundantní kopie všech dat.
+
+- Úspora úložného prostoru: Erasure coding umožňuje dosáhnout větší úspory úložného prostoru ve srovnání s tradičními metodami redundantního ukládání dat. Namísto ukládání plných kopií dat lze použít pouze část fragmentů k obnovení původních dat. To znamená, že lze dosáhnout vyššího poměru mezi velikostí původních dat a spotřebovaným úložným prostorem.
+
+- Efektivní využití šířky pásma: Erasure coding umožňuje rozdělit data na fragmenty, které lze distribuovat mezi různé servery nebo úložiště. To umožňuje paralelní přenos dat mezi těmito zařízeními, což vede ke zvýšení využití šířky pásma a rychlejšímu přenosu dat.
+
+- Škálovatelnost: Erasure coding je dobře škálovatelnou technologií, která umožňuje snadné přidávání dalších úložišť nebo serverů do systému. Lze jednoduše rozšiřovat kapacitu a výkon systému bez nutnosti duplikace všech dat.
 
 
 
@@ -192,6 +243,15 @@ Zálohování pro koncové prvky a infrastrukturní systémy:
 - https://www.nutanix.com/info/distributed-storage
 - https://en.wikipedia.org/wiki/Distributed_data_store
 - https://www.netapp.com/data-management/what-is-data-deduplication/
+
+Archivace dat:
+- https://www.druva.com/glossary/what-is-data-archiving-definition-and-related-faqs
+- https://www.dataprotection.ie/en/individuals/data-protection-basics/principles-data-protection
+- https://en.wikipedia.org/wiki/Data_compression
+- https://dzone.com/articles/crunch-time-10-best-compression-algorithms
+- https://blog.fileformat.com/2021/09/03/lossy-and-lossless-compression-algorithms/
+- https://blog.min.io/erasure-coding/
+- https://stonefly.com/blog/understanding-erasure-coding
 
 
 
