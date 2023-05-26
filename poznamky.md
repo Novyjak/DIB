@@ -2,12 +2,9 @@
 
 Témata:
 
-5. Systémy vysoké dostupnosti datových úložišť
 6. Zálohovací technologie pro koncové prvky
 7. Zálohovací technologie pro infrastrukturní systémy
 8. Archivační technologie
-
-Měly by stačit 3 témata. Zjistit, které téma z 5. a 8. je zajímavější.
 
 # Zálohovací technologie pro koncové prvky (Endpoint data backup)
 
@@ -162,6 +159,25 @@ Replikace dat přináší několik výhod:
 - Odolnost vůči chybám: Pokud dojde k chybě nebo ztrátě dat na jednom umístění, replikované kopie poskytují záložní zdroj dat a minimalizují riziko ztráty dat.
 
 - Rychlá obnova dat: V případě ztráty dat na jednom umístění lze rychle obnovit data z replikovaných kopií, čímž se minimalizuje doba nedostupnosti a obnova.
+
+# Archivační technologie
+
+1. Co je archivace dat?
+2. Jak mají být data archivována v závislosti na jejich citlivost?
+3. Jak se liší archivace osobních a firemních dat?
+4. Co jsou komprimační algoritmy a kdy se využívají?
+5. Jakou technologii je vhodné využít pro zajištění více četných archivů a proč?
+
+## 1. Co je archivace dat?
+
+## 2. Jak mají být data archivována v závislosti na jejich citlivost?
+
+## 3. Jak se liší archivace osobních a firemních dat?
+
+## 4. Co jsou komprimační algoritmy a kdy se využívají?
+
+## 5. Jakou technologii je vhodné využít pro zajištění více četných archivů a proč?
+
 
 
 # Zdroje
