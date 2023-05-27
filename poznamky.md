@@ -243,6 +243,7 @@ Zálohování pro koncové prvky a infrastrukturní systémy:
 - https://www.nutanix.com/info/distributed-storage
 - https://en.wikipedia.org/wiki/Distributed_data_store
 - https://www.netapp.com/data-management/what-is-data-deduplication/
+- https://redis.com/blog/what-is-data-replication/
 
 Archivace dat:
 - https://www.druva.com/glossary/what-is-data-archiving-definition-and-related-faqs
